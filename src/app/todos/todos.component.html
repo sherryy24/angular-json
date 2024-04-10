@@ -1,0 +1,11 @@
+<div class="body">
+<h1>TODOS</h1>
+<div *ngIf="todos" class="d-flex justify-content-around flex-wrap">
+<div class="card m-3 " style="width: 18rem;" *ngFor="let todo of todos">
+    <div class="card-body ">
+      <h5 class="card-title">{{todo.title}}</h5>
+      <a  class="{{todo.completed ? 'btn btn-success' : 'btn btn-danger'}}">{{todo.completed ? 'Completed' : 'Pending'}}</a>
+    </div>
+  </div>
+</div>
+</div>

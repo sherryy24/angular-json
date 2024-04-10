@@ -1,0 +1,19 @@
+<!-- <button class="btn btn-primary" (click)="getUsers()">Get Users</button> -->
+<div class="body">
+<h1>USERS</h1>
+<div *ngIf="users" class="d-flex justify-content-around flex-wrap ">
+<div class="card m-3" style="width: 18rem; " *ngFor="let user of users.slice(0,8) ; let i =index">
+    <div class="card-body">
+      <h5 class="card-title">{{user.name}}</h5>
+      <p class="card-text">Email : {{user.email}}</p>
+      <a [routerLink]="['/posts', user.id]" class="btn btn-primary">Posts</a> |
+      <a [routerLink]="['/todos', user.id]" class="btn btn-primary">Todos</a> |
+      <a [routerLink]="['/albums', user.id]" class="btn btn-primary">Albums</a>
+
+
+
+
+    </div>
+  </div>
+</div>
+</div>

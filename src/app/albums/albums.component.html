@@ -1,0 +1,12 @@
+<div class="body">
+<h1>ALBUMS</h1>
+<div *ngIf="albums" class="d-flex justify-content-around flex-wrap">
+<div class="card m-3" style="width: 18rem;" *ngFor="let album of albums.slice(0,8)">
+    <div class="card-body">
+      <h5 class="card-title">{{album.title}}</h5>
+      <a [routerLink]="['/photos', album.id]" class="btn btn-primary">Photos</a>
+      
+    </div>
+  </div>
+</div>
+</div>

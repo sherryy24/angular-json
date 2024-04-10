@@ -1,0 +1,18 @@
+<div class="body">
+    <h1>COMMENTS</h1>
+<div *ngIf="comments">
+<div class="card text-center m-3" *ngFor="let comment of comments">
+    <div class="card-header">
+      Featured
+    </div>
+    <div class="card-body">
+      <h5 class="card-title">{{comment.name}}</h5>
+      <p class="card-text">{{comment.body}}</p>
+      <a href="#" class="btn btn-info">{{comment.email}}</a>
+    </div>
+    <div class="card-footer text-muted">
+      2 days ago
+    </div>
+  </div>
+</div>
+</div>

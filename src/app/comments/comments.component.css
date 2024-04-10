@@ -1,0 +1,17 @@
+a{
+    background-color: rgb(121,0,238);
+    color: white;
+}
+
+
+h1{
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+   
+}
+
+.body{
+    background-color: #E6E6FA;
+    height: 100vw;
+}

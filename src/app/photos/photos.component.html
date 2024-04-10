@@ -1,0 +1,16 @@
+<div class="body">
+
+
+<h1>PHOTOS</h1>
+<div *ngIf="photos">
+<div class="card bg-dark text-white m-5" *ngFor="let photo of photos" >
+    <img class="card-img" src={{photo.url}} alt="Card image">
+    <div class="card-img-overlay">
+        <img src={{photo.thumbnailUrl}}  class="img-thumbnail">
+      <h5 class="card-title">{{photo.title}}</h5>
+      
+      <p class="card-text">Last updated 3 mins ago</p>
+    </div>
+  </div>
+</div>
+</div>
